@@ -1,1 +1,1 @@
-This repository is for mutual-func-elch to commit the production code
+This repository is for mutual-fund-elch project to commit the production code
