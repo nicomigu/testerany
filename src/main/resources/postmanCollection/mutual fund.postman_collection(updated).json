@@ -1,0 +1,235 @@
+{
+	"info": {
+		"_postman_id": "dc353335-5ee1-403b-b874-4eeafa9b0e00",
+		"name": "mutual fund",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "8944007"
+	},
+	"item": [
+		{
+			"name": "regsiter",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"date_of_birth\" : \"2023-04-06\",\r\n    \"fname\": \"Justin\",\r\n    \"lname\": \"trudo\",\r\n    \"email\": \"5558@gmadil.com\",\r\n    \"pwd\": \"pwd\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/register",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "test",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiI1NTUcfcfvc",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Authenticate",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\" : \"5558@gmadil.com\",\r\n    \"password\" : \"pwd\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/authenticate",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"authenticate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Authenticate in memory",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "Authenticate ",
+					"host": [
+						"Authenticate "
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Auth browser",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "validate Token",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"token\" : \"eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1NTU4QGdtYWRpbC5jb20iLCJleHAiOjE2ODE4NTUyMzksImlhdCI6MTY4MTgzNzIzOX0.9ap3v0QSc4J-rjWhiy8SV8s370X8e5-ZrhywEm8DO_osdfsdf\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/validateToken",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"validateToken"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "register v2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"date_of_birth\" : \"2023-04-06\",\r\n    \"fname\": \"Justin\",\r\n    \"lname\": \"trudo\",\r\n    \"email\": \"5558@gmadil.com\",\r\n    \"pwd\": \"pwd\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/registerV2",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"registerV2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AuthenticateV2",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1NTU5QGdtYWRpbC5jb20iLCJleHAiOjE2ODE4ODYwNDUsImlhdCI6MTY4MTg2ODA0NX0.0o34IdAWxt0voB_x-MXbof8UuS9_v-wcbMmNuJM4OkY",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\" : \"5558@gmadil.com\",\r\n    \"password\" : \"pwd\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/authenticateV2",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"authenticateV2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "validateV2",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"token\" : \"eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1NTU4QGdtYWRpbC5jb20iLCJleHAiOjE2ODE5NTk4NDcsImlhdCI6MTY4MTk0MTg0N30.qc_9VMDJj6nhfkLIE8SD4YnKnvAwN4VkC90LFMiYVBM\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/validateTokenV2",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"validateTokenV2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
